@@ -1,0 +1,17 @@
+{
+  "name": "ardujsc",
+  "version": "1.0.0",
+  "description": "This package is for compiling javascript code to arduino code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "ardujsc": "./cli.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
