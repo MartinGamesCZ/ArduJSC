@@ -143,6 +143,9 @@ function loop() {
 
       var compiled = await Compiler.compile("build/temp/index.js", data);
 
+      console.log("Project was compiled successfully!")
+      console.log("\nFile was saved to: " + path.join(process.cwd(), "build", data.name, data.name + ".ino"));
+
       process.exit(0);
     });
   }

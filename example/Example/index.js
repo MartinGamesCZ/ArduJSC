@@ -21,5 +21,5 @@ function loop() {
     digitalWrite(13, "LOW");
     delay(i);
     i + 8
-    Serial.println("I je:" + i.toString())
+    Serial.println("I is:" + i.toString())
 }
