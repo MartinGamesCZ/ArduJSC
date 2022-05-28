@@ -90,7 +90,7 @@ To compile code, execute `ardujsc compile` inside your project folder.
 After code is compiled, go into build folder, then folder with name of your project and there is your .ino file. Open it with arduino ide and you can upload it.
 
 ## Contact
-email: [martinpetrnp@gmail.com](mailto:martinpetrnp@gmail.com)
-discord: [MartinGames#1477](https://discord.gg/7PY7SnFaF9)
-website: [martingamescz-dev.web.app](https://martingamescz-dev.web.app)
-donate: [ko-fi](https://ko-fi.com/martingames)
+- email: [martinpetrnp@gmail.com](mailto:martinpetrnp@gmail.com)
+- discord: [MartinGames#1477](https://discord.gg/7PY7SnFaF9)
+- website: [martingamescz-dev.web.app](https://martingamescz-dev.web.app)
+- donate: [ko-fi](https://ko-fi.com/martingames)
