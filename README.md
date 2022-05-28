@@ -68,7 +68,7 @@ void loop() {
     digitalWrite(13, LOW);
     delay(i);
     i + 8;
-    Serial.println("I je:" + String(i));
+    Serial.println("I is:" + String(i));
 };
 
 ```
