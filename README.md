@@ -4,7 +4,7 @@ Do you love arduino's but don't want to write program in c++? Me too, so I wrote
 
 This is CLI that compiles basic javascript code into c++ code for arduino. It's experimental at this time, it can do only basic codes like arduino blink example and similar.
 Please note that this is still experimental.
-If you like this and/or you want to support me and development of this and my other projects, consider [donating](https://ko-fi.com/martingames)
+If you like this and/or you want to support me and development of this and my other projects, consider [donating](https://ko-fi.com/martingames). This is only way i make money.
 
 ## Features
 What can it do?
