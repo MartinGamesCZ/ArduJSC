@@ -21,13 +21,13 @@ const Compiler = {
       content = content.replace(/module.exports = .*/, "");
       
       var a = content.match(/(var|let|const) ([a-zA-Z]*)(\s|)=(\s|)(.*);$/gm);
-      a.forEach((variable) => {
+      if (a && a.length > 0) a.forEach((variable) => {
           var type = variable.replace(/var .* = (.*|"[a-zA-Z]*");/gm, "$1").match(/^[0-9]+$/) != null ? "int" : "String"
           var name = variable.replace(/var ([a-zA-Z]*) .*$/gm, "$1");
           var value = variable.replace(/var .* = (.*);$/gm, "$1");
           content = content.replace(variable, type + " " + name + " = " + value + ";");
       })
-      content = content.replace(/([a-zA-Z]*).toString\(\)/, "String($1)");
+      content = content.replace(/([a-zA-Z]*).toString\(\)/gm, "String($1)");
       fs.writeFileSync(
         "build/" + settings.name + "/" + settings.name + ".ino",
         await fs.readFileSync("build/" + settings.name + "/" + settings.name + ".ino",

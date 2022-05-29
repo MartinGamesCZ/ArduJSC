@@ -20,5 +20,6 @@ void loop() {
     digitalWrite(13, LOW);
     delay(i);
     i + 8;
-    Serial.println("I is:" + String(i));
+    n++;
+    Serial.println("I is:" + String(i) + " and n is:" + String(n) + " and t is:" + String(t));
 };

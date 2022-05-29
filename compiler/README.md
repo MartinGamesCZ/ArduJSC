@@ -6,7 +6,7 @@ This is CLI that compiles basic javascript code into c++ code for arduino. It's 
 Please note that this is still experimental.
 If you like this and/or you want to support me and development of this and my other projects, consider [donating](https://ko-fi.com/martingames)
 
-You can also find it on [npm](https://www.npmjs.com/package/ardujsc)
+ArduJSC is open source, you can find it on [Github](https://github.com/MartinGamesCZ/ArduJSC)
 
 ## Features
 What can it do?
@@ -96,3 +96,4 @@ After code is compiled, go into build folder, then folder with name of your proj
 - discord: [MartinGames#1477](https://discord.gg/7PY7SnFaF9)
 - website: [martingamescz-dev.web.app](https://martingamescz-dev.web.app)
 - donate: [ko-fi](https://ko-fi.com/martingames)
+- github: [MartinGamesCZ](https://github.com/MartinGamesCZ)
