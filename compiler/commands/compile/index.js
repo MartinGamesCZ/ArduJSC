@@ -11,8 +11,32 @@ var compile = new Command(
   ["c"],
   "compile",
   function (args) {
-    return new Project().compile();
+    return ask(0)
   }
 )
+
+async function ask(id) {
+  var handler = new CommandHandler();
+
+  var questions = [
+    {
+      name: "port",
+      question: "Board port",
+      default: ""
+    },
+    {
+      name: "board",
+      question: "Board type",
+      default: "uno"
+    }
+  ]
+
+  var data = await handler.getUserInput(questions[id].question, questions[id].default).catch(() => ask(id))
+  if (data) {
+    projectData[questions[id].name] = data
+    if (id < questions.length - 1) return ask(id + 1)
+    new Project().compile(projectData.port, projectData.board);
+  }
+}
 
 module.exports = compile;

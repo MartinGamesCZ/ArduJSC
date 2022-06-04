@@ -95,7 +95,7 @@ function loop() {
     });
   }
 
-  compile() {
+  compile(port, board = "uno") {
     return new Promise(async (resolve, reject) => {
       console.log("\n");
       var loading = (function () {
@@ -133,6 +133,9 @@ function loop() {
 */`
       );
 
+      data.port = port;
+      data.board = "arduino:avr:" + board;
+
       await fs.writeFileSync(
         "build/temp/index.js",
         (await fs
@@ -142,9 +145,10 @@ function loop() {
       );
 
       var compiled = await Compiler.compile("build/temp/index.js", data);
+      console.log("Uploading code into board, please wait...");
+      await Compiler.avrDudeCompile("build/"+data.name + "/" + data.name + ".ino", data);
 
-      console.log("Project was compiled successfully!")
-      console.log("\nFile was saved to: " + path.join(process.cwd(), "build", data.name, data.name + ".ino"));
+      console.log("Project was uploaded successfully!");
 
       process.exit(0);
     });

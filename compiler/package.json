@@ -1,6 +1,6 @@
 {
   "name": "ardujsc",
-  "version": "1.0.01",
+  "version": "1.0.02",
   "description": "This package is for compiling javascript code to arduino code",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
     "ardujsc": "./cli.js"
   },
   "dependencies": {
+    "avr-pizza": "^0.3.5",
     "fs": "^0.0.1-security"
   }
 }

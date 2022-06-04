@@ -11,9 +11,12 @@ ArduJSC is open source, you can find it on [Github](https://github.com/MartinGam
 ## Features
 What can it do?
 
-- Compile basic javascript code into .ino file
+- Compile & upload basic javascript code to arduino
 
 ## Docs
+
+#### YouTube video
+<video src='https://youtu.be/Io5NYc-U4X4' width=180/>
 
 ### Example
 
@@ -80,6 +83,7 @@ void loop() {
 To install this, you need to have nodejs and npm installed.
 Download this using `npm i ardujsc -g`
 You can verify installation by running `ardujsc help`.
+You also need to have arduino IDE installed in C:\\Program Files (x86)\\Arduino. You can find it on [here](https://www.arduino.cc/en/Main/Software). Custom installation path will be supported in next version.
 
 ## Usage
 
@@ -89,7 +93,9 @@ After project is created you can go into folder with your project name.
 There should be your main file, open it and you can start programming!
 
 To compile code, execute `ardujsc compile` inside your project folder.
-After code is compiled, go into build folder, then folder with name of your project and there is your .ino file. Open it with arduino ide and you can upload it.
+Then enter port of your board (you can find it inside Arduino IDE).
+Enter board type (nano, uno, micro, etc) and press enter.
+Code will be compiled and uploaded into your board.
 
 ## Contact
 - email: [martinpetrnp@gmail.com](mailto:martinpetrnp@gmail.com)
