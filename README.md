@@ -16,7 +16,7 @@ What can it do?
 ## Docs
 
 #### YouTube video
-<video src='https://youtu.be/Io5NYc-U4X4' width='180' />
+[https://youtu.be/Io5NYc-U4X4](https://youtu.be/Io5NYc-U4X4)
 
 ### Example
 
